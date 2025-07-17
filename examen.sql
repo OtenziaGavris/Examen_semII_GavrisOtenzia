@@ -36,6 +36,7 @@ CREATE TABLE alee
 (
     fid SERIAL PRIMARY KEY,
     nume VARCHAR(50),
+	geom GEOMETRY (LINESTRING, 4326),
     fid_spatiu_verde int not null references spatiu_verde(fid)
 );
 
